@@ -16,8 +16,12 @@ public class answer1 {
                 "4. 신청 관리 ",
                 "5. 종료 "
         };
-        for (int i = 0; i < lectureList.length; i++) {
-            System.out.println(lectureList[i]);
+//        for (int i = 0; i < lectureList.length; i++) {
+//            System.out.println(lectureList[i]);
+//        }
+        // for-each문
+        for ( String lecture : lectureList){
+            System.out.println(lecture);
         }
     }
 
