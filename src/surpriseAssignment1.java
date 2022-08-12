@@ -1,15 +1,15 @@
 import java.util.Scanner;
 
 public class surpriseAssignment1 {
-    public static void main(String[] args) {
-        System.out.println("<<<<[수강신청]>>>>");
-        Scanner sc = new Scanner(System.in);
 
-            System.out.println("1. 강의 관리 ");
-            System.out.println("2. 교사 관리 ");
-            System.out.println("3. 학생 관리 ");
-            System.out.println("4. 신청 관리 ");
-            System.out.println("5. 종료 ");
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("<<<<[수강신청]>>>>");
+        System.out.println("1. 강의 관리 ");
+        System.out.println("2. 교사 관리 ");
+        System.out.println("3. 학생 관리 ");
+        System.out.println("4. 신청 관리 ");
+        System.out.println("5. 종료 ");
 
         while (true) {
             int input = sc.nextInt();
