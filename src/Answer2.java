@@ -18,6 +18,7 @@ public class Answer2 {
                 0,0,0,0,0,0,0,0,0,0,
                 0,0,0,0,0,0
         };
+        int totalCnt = 0;
 
         for (int i = 0; i < fileText.length(); i++) {
             char c1 = fileText.charAt(i);
@@ -48,12 +49,16 @@ public class Answer2 {
             else if (c1 == 'y') {alpCnt[24]++;}
             else if (c1 == 'z') {alpCnt[25]++;}
             }
+
+        for (int i = 0; i < alpCnt.length ; i++) {
+            totalCnt += alpCnt[i];
+        }
         for (int i = 0; i < alpCnt.length; i++) {
+            double rate = (double) alpCnt[i] / totalCnt * 100;
             // i + 65
-            String format = String.format("%c = %d, \t %.2f", i +65, alpCnt[i], 0);
+            String format = String.format("%c = %6d, \t %.2f%%", i +65, alpCnt[i], rate);
             System.out.println(format);
         }
     }
-
 }
 
