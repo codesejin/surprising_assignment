@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class answer1 {
+public class Answer1 {
     // 무한 출력해야 한다는 이슈가 있기에 => 함수로 만들어줌
     // 컨트롤 + > 로 줄어들게 할 수 있음
     // 이렇게 함수로 만드는 과정을 리팩토링이라 함
